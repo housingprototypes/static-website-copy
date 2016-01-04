@@ -1,0 +1,911 @@
+<script>top.location.replace("http://housingprototypes.org/project?File_No=E009");</script>
+
+<html>
+<head>
+<title>
+Housing Prototypes</title>
+
+<script language="javascript" src="temp/ypSimpleScrollC.js"></script>
+<script language="javascript">
+	var menuscroa = new ypSimpleScroll("menuscro1", 0, 0, 170, 340, 100);
+	var menuscrob = new ypSimpleScroll("menuscro2", 0, 0, 170, 340, 100);
+	var menuscrod = new ypSimpleScroll("menuscro4", 0, 0, 170, 340, 100);
+	var menuscroe = new ypSimpleScroll("menuscro5", 0, 0, 170, 340, 100)
+	</script>
+
+<script language="javascript" src="temp/ypSlideOutMenusC.js"></script>
+<script language="javascript">
+	var menus = [
+		new ypSlideOutMenu("menu1", "right", 176, 52, 190, 340),
+		new ypSlideOutMenu("menu2", "right", 176, 74, 170, 340),
+		new ypSlideOutMenu("menu3", "right", 176, 97, 170, 340),
+		new ypSlideOutMenu("menu4", "right", 176, 120, 170, 340),
+		new ypSlideOutMenu("menu5", "right", 176, 143, 170, 340)
+	]
+
+	for (var i = 0; i < menus.length; i++) {
+		menus[i].onactivate = new Function("document.getElementById('act" + i + "').className='active';");
+		menus[i].ondeactivate = new Function("document.getElementById('act" + i + "').className='';");
+	}
+</script>
+
+<style type="text/css">
+body {
+	margin: 0px; margin-top: 8px;
+	padding: 0px;
+	background-color: white; }
+a {
+	color: #336699;
+	border: 0px; 
+	text-decoration: none;}
+a:hover {
+	color: #9CCEFF; }
+form {
+	display: inline; }
+p, a, ul, ol {
+	font: 11px verdana, arial, helvetica, sans-serif; }
+td {
+	font: 10px verdana, arial, helvetica, sans-serif;
+	vertical-align: top; }
+th {
+	text-align: left;
+	border-bottom: 1px dotted #272338; 
+}
+th > a {
+ text-decoration: none;
+}
+img {
+	border: 0px; }
+input {
+	font: 10px verdana, arial, helvetica, sans-serif;
+	padding: 2px; }
+.bibliography {
+	text-indent: -12px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	}
+.basenavigation {
+	border-top: 1px dotted #aaaaaa;
+	margin-left: 168px;
+	margin-bottom: 24px;
+	margin-top: 24px;
+	text-align: center;
+	color: #aaaaaa;
+	padding: 4px;
+	font: 10px verdana, arial, helvetica, sans-serif;
+	}
+.caption {
+	color: #336699;
+	font-size: 10px;
+	}
+.glossary dd {
+	margin-bottom: 12px;
+	font-size: 10px;
+	}
+.glossary dd a {
+	font-size: 10px;
+	}
+.glossary dt {
+	font-weight: bold;
+	}
+.highlight {
+ 	background-color: #CFDDE8;
+	border: 1px dotted #000000;
+	}
+.icon {
+ 	background-color: #272338;
+	float: left;
+	}
+.icon img {
+	border: 1px solid #ffffff;
+border-left: 0px;
+	}
+.keyimage {
+	float: right;
+	width: 250px;
+	margin: -8px;
+	padding-left: 16px;
+	padding-bottom: 16px;
+	}
+.mainnav {
+	background-color: #CCCCCC;
+	background-image: url(temp/gradient.gif);
+	height: 26px;
+	text-align: right;
+	display: block;
+	}
+.menu .options {
+	background-color: #EEEEEE;
+	width: 91%;
+	}
+.menu a {
+	color: #666699;
+	font: 10px verdana, arial, helvetica, sans-serif;
+	display: block;
+	padding: 2px 5px;
+	border: 1px solid #FFFFFF;
+	border-bottom: 0px;
+	text-decoration: none;
+	}
+.menu li {
+	color: #ffffff;
+	list-style: none;
+	}
+.menu ul {
+	border-left: 1px solid #FFFFFF;
+	border-top: 0px solid #FFFFFF;
+	padding-left: 10px;
+	margin: 0px;
+	background-color: #EEEEEE;
+	}
+.menu a:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	}
+.menu a:active {
+	background-color: #666666;
+	color: #FFFFFF;
+	}
+#menubar {
+	background-color: #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	float: left;
+	text-align: right;
+	width: 177px;
+	}
+.more a {
+	background-color: #999999;
+	color: #FFFFFF;
+	}
+.more {
+	color: #FFFFFF;
+	width: 10px;
+	height: 10px;
+	padding: 0px;
+	margin: 0px; 
+	}
+.more a:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	}
+.projectbyline {
+	padding: 5px;
+	font: 10px verdana, arial, helvetica;
+	background-color: #666666;
+	color: #FFFFFF;
+	text-align: right;
+	border-right: 1px solid #FFFFFF;
+	}
+.projectname {
+	padding: 8px;
+	padding-top: 33px;
+	font: 20px/23px century gothic, verdana, arial, helvetica;
+	background-color: #272338;
+	color: #FFFFFF;
+	text-align: right;
+	border: 1px solid #FFFFFF;
+	}
+.projectsummary {
+	padding: 8px;
+	font: 11px verdana, arial, helvetica;
+	border-right: 1px solid #FFFFFF;
+	margin-left: 180px;
+	}
+.projectsummary table {
+	}
+.projectthumbnails {
+	font: 10px verdana, arial, helvetica, sans-serif;
+	color: #666666;
+	float: left;
+	text-align: left;
+	margin-left: 8px;
+	width: 150px;
+	}
+.scrolldown {
+	position: absolute; top: 170px; left: 153px;
+	background-color: #666699;
+	vertical-align: bottom;
+	border: 0px;
+	width: 17px;
+	}
+.scrollup {
+	position: absolute; top: 0px; left: 153px;
+	background-color: #666699;
+	border: 0px;
+	width: 17px;
+	}
+.scrollup a {
+	padding: 0px; margin: 0px;
+	height: 170px;
+	}
+.scrolldown a {
+	padding: 0px; margin: 0px;
+	padding-top: 154px;
+	height: 170px;
+	}
+.searchbox {
+	border: 1px solid #BBBBBB;
+	background-color: #FFFFFF;
+	width: 100px;
+	margin-bottom: 6px;
+	}
+.sitenav {
+	text-align: right;
+	padding-right: 8px;
+	border-bottom: 1px solid #272338;
+	border-right: 1px solid #FFFFFF;
+	}
+.sitenav a {
+	font: 10px verdana, arial, helvetica, sans-serif;
+	color: #CCCCCC;
+	text-decoration: none;
+	}
+.sitenav a:hover {
+	background-color: #EEEEEE;
+	}
+#slideout a {
+	font: 10px verdana;
+	padding: 5px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: #666699;
+	color: #EEEEEE;
+	letter-spacing: 1px;
+	width: 176px;
+	display: block;
+	border-bottom: 1px solid #FFFFFF;
+	text-decoration: none;
+	}
+#slideout a:hover {
+	background-color: #000000;
+	}
+.sublink {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-decoration: none;
+	}
+.submit {
+	padding: 0px; margin: 0px; border: 0px;
+	}
+.thumbnail {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #336699;
+	font-size: 10px;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	}
+.thumbnail:hover {
+	background-color: #EEEEEE;
+	color: #336699;
+	}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" onload="menuscroa.load(); menuscrob.load(); menuscrod.load(); menuscroe.load();">
+
+<div class="sitenav">
+<a href="http://www.housingprototypes.org/admin">ADMIN</a>
+<br>
+<a href="http://housingprototypes.org"><img src="temp/hptitle.gif" width="487" height="30" border="0" alt="Housing Prototypes.org"></a><br>
+</div>
+
+<div id="menubar">
+<div id="slideout">
+	<a id="act0" href="category?field=Project_Name" onmouseover="ypSlideOutMenu.showMenu('menu1');" onmouseout="ypSlideOutMenu.hideMenu('menu1');">PROJECT NAME&nbsp;</a>
+ <a id="act1" href="category?field=Architect" onmouseover="ypSlideOutMenu.showMenu('menu2')" onmouseout="ypSlideOutMenu.hideMenu('menu2')">ARCHITECT&nbsp;</a>
+	<a id="act2" href="category?field=Building_Type" onmouseover="ypSlideOutMenu.showMenu('menu3')" onmouseout="ypSlideOutMenu.hideMenu('menu3')">BUILDING TYPE&nbsp;</a>
+	<a id="act3" href="category?field=City" onmouseover="ypSlideOutMenu.showMenu('menu4')" onmouseout="ypSlideOutMenu.hideMenu('menu4')">CITY&nbsp;</a>
+	<a id="act4" href="category?field=Country" onmouseover="ypSlideOutMenu.showMenu('menu5')" onmouseout="ypSlideOutMenu.hideMenu('menu5')">COUNTRY&nbsp;</a>
+</div>
+<div class="projectthumbnails">
+
+
+<center>
+<img src="temp/recentprojects.gif"><p>
+
+<a href="project?File_No=USA021" class="thumbnail"><img width="100" border="0" src="http://www.housingprototypes.org/images/nouvel&#32;11th&#32;ave_01.jpg_thumbnail.jpg"
+alt="Image of 100 Eleven...">
+<br>
+100 Eleventh Avenue</a>
+<br clear="all">
+
+
+<a href="project?File_No=ITA001" class="thumbnail"><img width="100" border="0" src="images/Giras01m_thumbnail.jpg"
+alt="Image of Il Girasol...">
+<br>
+Il Girasole</a>
+<br clear="all">
+
+
+<a href="project?File_No=USA019" class="thumbnail"><img width="100" border="0" src="images/Meier&#32;Perry_04.jpg_thumbnail.jpg"
+alt="Image of Perry & ...">
+<br>
+Perry & Charles Street</a>
+<br clear="all">
+
+
+<a href="project?File_No=USA020" class="thumbnail"><img width="100" border="0" src="images/497&#32;Greenwich_02.jpg_thumbnail.jpg"
+alt="Image of Greenwich ...">
+<br>
+Greenwich Street</a>
+<br clear="all">
+
+
+<a href="project?File_No=ITA037" class="thumbnail"><img width="100" border="0" src="images/San&#32;Maurizio_01m.jpg_thumbnail.jpg"
+alt="Image of San Mauriz...">
+<br>
+San Maurizio</a>
+<br clear="all">
+</center>
+</div>
+
+	</div>	
+
+<div id="menu1Container">
+<div id="menuscro1Container">
+	<div id="menu1Content" class="menu">
+	<div id="menuscro1Content" class="menu">
+		<div class="options"><a href="project?File_No=USA021">100 Eleventh ...</a>
+<a href="project?File_No=S004">6 Blocks</a>
+<a href="project?File_No=USA010">937 Glisan</a>
+<a href="project?File_No=ITA025">Aldrovandi</a>
+<a href="project?File_No=ENG001">Alexandra Road</a>
+<a href="project?File_No=FRA010">Antigone</a>
+<a href="project?File_No=ITA007">Astrea Co-op</a>
+<a href="project?File_No=USA016">Atlantis</a>
+<a href="project?File_No=FRA015">Av. Jean-Jaurès</a>
+<a href="project?File_No=FRA008">Ave. Daumesnil ...</a>
+<a href="project?File_No=FRA018">Avenue de Versaill...</a>
+<a href="project?File_No=FRA035">Bagnolet Artists' ...</a>
+<a href="project?File_No=SWE005">Barberaren</a>
+<a href="project?File_No=FRA028">Bellièvre Studios</a>
+<a href="project?File_No=ITA036">Belsito</a>
+<a href="project?File_No=FRA037">Bercy-Gabriel ...</a>
+<a href="project?File_No=fra022">Bobigny HLM Low ...</a>
+<a href="project?File_No=CH010">Bodenacher</a>
+<a href="project?File_No=POR001">Bouça</a>
+<a href="project?File_No=FRA012">Boulevard Bellevil...</a>
+<a href="project?File_No=FRA001">Boulevard Ney ...</a>
+<a href="project?File_No=FRA009">Boulevard Victor ...</a>
+<a href="project?File_No=GER001">Britz/Hufeisensied...</a>
+<a href="project?File_No=ITA003">Broletto</a>
+<a href="project?File_No=CH006">Brunnadern</a>
+<a href="project?File_No=USA006">Bubeshko Terrace ...</a>
+<a href="project?File_No=GB015">Burrell's Wharf</a>
+<a href="project?File_No=FRA014">Butte-Rouge</a>
+<a href="project?File_No=CZ002">Böhm Apartments</a>
+<a href="project?File_No=ITA014">Ca' Brütta</a>
+<a href="project?File_No=E003">Calle Bach ...</a>
+<a href="project?File_No=SPA002">Casa de la Marina</a>
+<a href="project?File_No=E007">Casa de las Flores</a>
+<a href="project?File_No=ITA024">Casa della ...</a>
+<a href="project?File_No=ITA011">Casalino</a>
+<a href="project?File_No=NOR001">Casinetto Cooperat...</a>
+<a href="project?File_No=FRA005">Chateau des ...</a>
+<a href="project?File_No=GB005">Chronos Buildings</a>
+<a href="project?File_No=GB014">Coin Street</a>
+<a href="project?File_No=SWE004">Collective House</a>
+<a href="project?File_No=E008">Coop Obrera</a>
+<a href="project?File_No=ITA008">Corso Italia</a>
+<a href="project?File_No=ITA004">Corviale</a>
+<a href="project?File_No=FRA038">Cour St. Emilion ...</a>
+<a href="project?File_No=NL007">De Dukaat + Zorro</a>
+<a href="project?File_No=FRA006">De Meaux</a>
+<a href="project?File_No=ITA006">Decima</a>
+<a href="project?File_No=GB011">Dorset House</a>
+<a href="project?File_No=NETH004">Droogbak</a>
+<a href="project?File_No=CZ003">Druztevni Co-op</a>
+<a href="project?File_No=FRA031">Duée/Pixérécourt ...</a>
+<a href="project?File_No=USA008">Dutra-Brown ...</a>
+<a href="project?File_No=NETH002">Eigen Haard</a>
+<a href="project?File_No=SPA001">El Ravel</a>
+<a href="project?File_No=FRA011">Etienne-Dolet, ...</a>
+<a href="project?File_No=ITA012">Fabio Filzi</a>
+<a href="project?File_No=CH004">Flamatt I & II</a>
+<a href="project?File_No=ITA023">Fondamenta Cereri</a>
+<a href="project?File_No=D006">Fraenkelufer</a>
+<a href="project?File_No=ITA035">Fratelli Ruspoli</a>
+<a href="project?File_No=DEN001">Galgebakken</a>
+<a href="project?File_No=ITA021">Gallaratese</a>
+<a href="project?File_No=FRA030">Gambetta Apartment...</a>
+<a href="project?File_No=E006">Girasol Apartments</a>
+<a href="project?File_No=GB008">Golden Lane/Barbic...</a>
+<a href="project?File_No=GB013">Grand Union Canal</a>
+<a href="project?File_No=USA020">Greenwich Street</a>
+<a href="project?File_No=SWE002">Gärdet</a>
+<a href="project?File_No=CZ004">Habich House</a>
+<a href="project?File_No=CH008">Halen</a>
+<a href="project?File_No=NL019">Het Funen</a>
+<a href="project?File_No=ENG002">Highpoint I & II</a>
+<a href="project?File_No=FIN003">Hiiralankaari</a>
+<a href="project?File_No=CZ007">Hodek Apartments</a>
+<a href="project?File_No=NL018">Hoop Liefde en ...</a>
+<a href="project?File_No=ITA001">Il Girasole</a>
+<a href="project?File_No=FRA045">Ilôt Schömberg</a>
+<a href="project?File_No=USA014">Imperial</a>
+<a href="project?File_No=ITA20">INA Casa Harrar-Po...</a>
+<a href="project?File_No=ITA017">INA Casa Harrar/Bo...</a>
+<a href="project?File_No=ITA015">INA Casa Harrar/Fi...</a>
+<a href="project?File_No=ITA016">INA Casa Harrar/Re...</a>
+<a href="project?File_No=ITA034">Intensivo Libia</a>
+<a href="project?File_No=ITA013">Intervento IACP ...</a>
+<a href="project?File_No=USA002">John Hancock ...</a>
+<a href="project?File_No=USA009">Kippen Condos</a>
+<a href="project?File_No=NL020">Klein Driene</a>
+<a href="project?File_No=CZ006">Krizka</a>
+<a href="project?File_No=SWE003">Kungsklippan</a>
+<a href="project?File_No=FRA033">La Croix Nivert ...</a>
+<a href="project?File_No=NL028">La Fenêtre</a>
+<a href="project?File_No=FRA017">La Muette</a>
+<a href="project?File_No=ITA028">La Tartaruga</a>
+<a href="project?File_No=E005">Las Cocheras</a>
+<a href="project?File_No=ITA026">Laurentino 38</a>
+<a href="project?File_No=FRA029">Lauriston Postal ...</a>
+<a href="project?File_No=ITA002">Lega Lombarda ICP ...</a>
+<a href="project?File_No=FRA036">Léon-Maurice ...</a>
+<a href="project?File_No=CZ001">Letohradska</a>
+<a href="project?File_No=GER002">Lindenstrasse ...</a>
+<a href="project?File_No=CH005">Lorraine</a>
+<a href="project?File_No=GB006">Maiden Lane Stage ...</a>
+<a href="project?File_No=AUS001">Majolica House</a>
+<a href="project?File_No=FRA032">Ménilmontant ...</a>
+<a href="project?File_No=ITA018">Mercadante</a>
+<a href="project?File_No=USA007">Merrimac Building</a>
+<a href="project?File_No=GB003">Millennium Village</a>
+<a href="project?File_No=GB004">Millennium ...</a>
+<a href="project?File_No=JAP001">Motomachi and ...</a>
+<a href="project?File_No=GB007">Murray Grove</a>
+<a href="project?File_No=SWI002">Mühlehalde ...</a>
+<a href="project?File_No=FRA004">Nemasus I & II</a>
+<a href="project?File_No=SWE001">New Bruket</a>
+<a href="project?File_No=FRA003">Oberkampf Postal ...</a>
+<a href="project?File_No=FRA026">Oberkampf/Saadi</a>
+<a href="project?File_No=NL005">Olympic Quarter</a>
+<a href="project?File_No=FIN001">Paciuksenkatu</a>
+<a href="project?File_No=GB017">Page Street</a>
+<a href="project?File_No=USA015">Palace</a>
+<a href="project?File_No=ITA029">Palazzina Rea</a>
+<a href="project?File_No=ITA027">Palazzina Tiziano</a>
+<a href="project?File_No=ITA031">Palazzina Zaccardi</a>
+<a href="project?File_No=E009">Palomeras-Andaluce...</a>
+<a href="project?File_No=E011">Palomeras-Av. ...</a>
+<a href="project?File_No=E010">Palomeras-Hernande...</a>
+<a href="project?File_No=NL008">Parkrand</a>
+<a href="project?File_No=JAP003">Pasadena Heights</a>
+<a href="project?File_No=FRA016">Pelleport Apartmen...</a>
+<a href="project?File_No=USA019">Perry & Charles ...</a>
+<a href="project?File_No=USA003">Pike Market ...</a>
+<a href="project?File_No=ITA032">Pinturicchio</a>
+<a href="project?File_No=NETH003">Piraeus</a>
+<a href="project?File_No=GB012">Pullman Court</a>
+<a href="project?File_No=FRA027">Quai de Seine</a>
+<a href="project?File_No=FRA042">Quai de Seine/ ...</a>
+<a href="project?File_No=ITA010">Quartaccio</a>
+<a href="project?File_No=POR003">Quinta da Malaguei...</a>
+<a href="project?File_No=CH007">Rainpark</a>
+<a href="project?File_No=FRA040">Reine Blanche ...</a>
+<a href="project?File_No=D17">Ritterstrasse-nord</a>
+<a href="project?File_No=USA017">Riverbend</a>
+<a href="project?File_No=FRA025">Roquette</a>
+<a href="project?File_No=FRA023">Rue des Suisses</a>
+<a href="project?File_No=FRA024">Rue du Chevaleret</a>
+<a href="project?File_No=FRA039">rue l'Amiral ...</a>
+<a href="project?File_No=FRA041">Rue Petite</a>
+<a href="project?File_No=FRA044">Saint-Fargeau ...</a>
+<a href="project?File_No=JAP002">Sakura-dai-Village</a>
+<a href="project?File_No=ITA037">San Maurizio</a>
+<a href="project?File_No=POR002">Sào Victor</a>
+<a href="project?File_No=NL012">Silodam</a>
+<a href="project?File_No=HK001">Skip Kip Mei</a>
+<a href="project?File_No=DEN002">Solbjerg Have</a>
+<a href="project?File_No=USA018">Sunset Multi-use</a>
+<a href="project?File_No=FIN004">Suvikumpu/Suvituul...</a>
+<a href="project?File_No=FRA034">Tage Kellerman</a>
+<a href="project?File_No=GER003">Tapachstrasse ...</a>
+<a href="project?File_No=CH009">Thalmatt 2</a>
+<a href="project?File_No=SWI001">Thalmatt I</a>
+<a href="project?File_No=USA001">The Babylon</a>
+<a href="project?File_No=USA013">The Casey</a>
+<a href="project?File_No=USA011">The Edge</a>
+<a href="project?File_No=NL004">The Light Factory</a>
+<a href="project?File_No=USA012">The Metropolitan</a>
+<a href="project?File_No=ITA022">Torre Velasca</a>
+<a href="project?File_No=ITA009">Torrevecchia</a>
+<a href="project?File_No=GB010">Trellick Tower</a>
+<a href="project?File_No=NZ001">Trinity Apartments</a>
+<a href="project?File_No=GB016">Trinity Buoy Wharf</a>
+<a href="project?File_No=USA005">Twin Parks ...</a>
+<a href="project?File_No=FRA007">Vandrezanne Apts.</a>
+<a href="project?File_No=NL006">Veltmanstraat</a>
+<a href="project?File_No=NZ002">Viaduct Harbour</a>
+<a href="project?File_No=ITA005">Villagio Olimpico</a>
+<a href="project?File_No=CZ005">Vinarská 6 + 7</a>
+<a href="project?File_No=FIN002">Välno Aurerin ...</a>
+<a href="project?File_No=USA004">Waterside</a>
+<a href="project?File_No=NETH001">Weesperstraat</a>
+<a href="project?File_No=NL%2520017">Westerdok Island/L...</a>
+<a href="project?File_No=NL013">Willibrordus</a>
+<a href="project?File_No=GB009">Willow Road</a>
+<a href="project?File_No=NL011">Wozoco</a>
+<a href="project?File_No=FRA043">ZAC Moskowa</a>
+<a href="project?File_No=FRA002">ZAC, Reuilly-Galfe...</a>
+<a href="project?File_No=ITA019">Zattere Co-op</a>
+			</div>
+		</div>
+		<div class="scrollup"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscroa.scrollNorth(); ypSlideOutMenu.showMenu('menu1');" 
+			onmousedown="menuscroa.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscroa.endScroll(); ypSlideOutMenu.hideMenu('menu1');"
+			onmouseup="menuscroa.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/up.gif"></a>
+		</div>
+		<div class="scrolldown"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscroa.scrollSouth(); ypSlideOutMenu.showMenu('menu1');" 
+			onmousedown="menuscroa.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscroa.endScroll(); ypSlideOutMenu.hideMenu('menu1');"
+			onmouseup="menuscroa.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/down.gif"></a>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="menu2Container">
+<div id="menuscro2Container">
+	<div id="menu2Content" class="menu">
+	<div id="menuscro2Content" class="menu">
+		<div class="options"><a href="instance?field=Architect&amp;val=Adams,%2520William&amp;sort=Project_Name">Adams, William</a>
+<a href="instance?field=Architect&amp;val=Albini,%2520Franco,%3B%2520Renato%2520Camus,%2520Giancarlo%2520Palanti&amp;sort=Project_Name">Albini, Franco,; ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Alfaro,%20Carlos%20Ferr%E1n;%20Jos%E9%20Luis%20Romany%20Aranda;%20Fernando%20Navazo%20Rivero&amp;sort=Project_Name">Alfaro, Carlos ...</a>
+<a href="instance?field=Architect&amp;val=Archi-Tectonics%252FWinka%2520Dubbeldam&amp;sort=Project_Name">Archi-Tectonics/Wi...</a>
+<a href="instance?field=Architect&amp;val=Architecture%2520Studio&amp;sort=Project_Name">Architecture ...</a>
+<a href="instance?field=Architect&amp;val=Architectus&amp;sort=Project_Name">Architectus</a>
+<a href="instance?field=Architect&amp;val=Arquitectonica&amp;sort=Project_Name">Arquitectonica</a>
+<a href="instance?field=Architect&amp;val=Atelier%25205&amp;sort=Project_Name">Atelier 5</a>
+<a href="instance?field=Architect&amp;val=Audren,%2520Jacques%2520&amp;%2520Robert%2520Schlumberger&amp;sort=Project_Name">Audren, Jacques & ...</a>
+<a href="instance?field=Architect&amp;val=Aymonino,%2520Carlo%2520&amp;%2520Ludovico%2520Quaroni&amp;sort=Project_Name">Aymonino, Carlo & ...</a>
+<a href="instance?field=Architect&amp;val=Aymonino,%2520Carlo,%2520Studio%2520Ayde,%2520Aldo%2520Rossi&amp;sort=Project_Name">Aymonino, Carlo, ...</a>
+<a href="instance?field=Architect&amp;val=Bakema,%2520J.B.,%2520J.%2520H.%2520van%2520den%2520Broek,%2520F.%2520J.%2520van%2520Gool,%2520J.%2520M.%2520Stokla&amp;sort=Project_Name">Bakema, J.B., J. ...</a>
+<a href="instance?field=Architect&amp;val=Baliva,%2520F.%2520Alessandro%2520De%2520Rossi,%2520E.%2520Rampelli&amp;sort=Project_Name">Baliva, F. ...</a>
+<a href="instance?field=Architect&amp;val=Barre,%2520Gilles,%2520Loeiz%2520Caradec,%2520Francoise%2520Risterucci&amp;sort=Project_Name">Barre, Gilles, ...</a>
+<a href="instance?field=Architect&amp;val=Barucci,%2520Pietro,%2520Alessandro%2520de%2520Rossi,%2520Lucino%2520Giovanni,%2520Camilo%2520Nucci,%2520Americo%2520Sosgtegn,%2520Umberto%2520Cao,%2520Massimo%2520del%2520Vecchio,%2520Gianfranco%2520Marucci,%2520Bruni%2520Daro&amp;sort=Project_Name">Barucci, Pietro, ...</a>
+<a href="instance?field=Architect&amp;val=Barucci,%2520Pietro,%3B%2520%2520Lucio%2520Passarelli,%2520Marcello%2520Vitorini,%2520Piero%2520Gandolfi,%2520Tuillo%2520Leonori,%2520Patrizia%2520Pizzinato,%2520Gaspare%2520Squadrilli&amp;sort=Project_Name">Barucci, Pietro,; ...</a>
+<a href="instance?field=Architect&amp;val=Barucci,%2520Pietro,%3B%2520Mario%2520Avagnina,%2520Simone%2520Ombuen,%2520Guido%2520Palombi,%2520M.%2520Cristina%2520Perugia,%2520Patrizia%2520Pizzinato&amp;sort=Project_Name">Barucci, Pietro,; ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Bassompierre,%20Joseph,%20&amp;%20Paul%20de%20Rutt%E9%20&amp;%20Paul%20Sirvin&amp;sort=Project_Name">Bassompierre, ...</a>
+<a href="instance?field=Architect&amp;val=BBPR%2520(Gian%2520Luigi%2520Banfi,%2520Lodovico%2520Belgiojoso,%2520Enrico%2520Peresutti,%2520Ernesto%2520Rogers)&amp;sort=Project_Name">BBPR (Gian Luigi ...</a>
+<a href="instance?field=Architect&amp;val=Bennett,%2520T.P.%2520&amp;%2520Joseph%2520Emberton&amp;sort=Project_Name">Bennett, T.P. & ...</a>
+<a href="instance?field=Architect&amp;val=Benson,%2520Gordon%2520&amp;%2520Alan%2520Forsyth&amp;sort=Project_Name">Benson, Gordon & ...</a>
+<a href="instance?field=Architect&amp;val=Bofill,%2520Ricardo%2520(Taller%2520de%2520Arquitectura)&amp;sort=Project_Name">Bofill, Ricardo ...</a>
+<a href="instance?field=Architect&amp;val=BOORA%2520Architects%2520&amp;%2520Planners&amp;sort=Project_Name">BOORA Architects ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Borel,%20Fr%E9d%E9ric&amp;sort=Project_Name">Borel, Frédéric</a>
+<a href="instance?field=Architect&amp;val=Bottoni,%2520Piero&amp;sort=Project_Name">Bottoni, Piero</a>
+<a href="instance?field=Architect&amp;val=Bottoni,%2520Piero,%2520%2520Mario%2520Marini%2520&amp;%2520Carlo%2520Villa&amp;sort=Project_Name">Bottoni, Piero,  ...</a>
+<a href="instance?field=Architect&amp;val=Brenac,%2520Oliver%2520&amp;%2520Xavier%2520Gonzales&amp;sort=Project_Name">Brenac, Oliver & ...</a>
+<a href="instance?field=Architect&amp;val=Brossy,%2520Vincent&amp;sort=Project_Name">Brossy, Vincent</a>
+<a href="instance?field=Architect&amp;val=Brown,%2520Neave%2520(Camden%2520Town%2520Department%2520of%2520Architecture)&amp;sort=Project_Name">Brown, Neave ...</a>
+<a href="instance?field=Architect&amp;val=Buffi,%2520Jean-Pierre&amp;sort=Project_Name">Buffi, Jean-Pierre</a>
+<a href="instance?field=Architect&amp;val=Cafiero,%2520Vittorio,%3B%2520%2520Adalberto%2520Libera,%2520Luigi%2520Moretti,%2520Vicenzo%2520Monaco,%2520Amedeo%2520Luccichenti&amp;sort=Project_Name">Cafiero, Vittorio,...</a>
+<a href="instance?field=Architect&amp;val=Candilis,%2520Georges,%2520Alexis%2520Josic,%2520Shadrach%2520Woods&amp;sort=Project_Name">Candilis, Georges,...</a>
+<a href="instance?field=Architect&amp;val=Cartwright%2520and%2520Pickard%2520(Peter%2520Chartwright%2520and%2520James%2520Pickard)&amp;sort=Project_Name">Cartwright and ...</a>
+<a href="instance?field=Architect&amp;val=Chamberlin,%2520Powell%2520&amp;%2520Bon%2520(Peter%2520Chamberlin,%2520Geoffry%2520Powell,%2520Christof%2520Bon&amp;sort=Project_Name">Chamberlin, ...</a>
+<a href="instance?field=Architect&amp;val=Chavannes,%2520Patrick&amp;sort=Project_Name">Chavannes, Patrick</a>
+<a href="instance?field=Architect&amp;val=Chochol,%2520Josef&amp;sort=Project_Name">Chochol, Josef</a>
+<a href="instance?field=Architect&amp;val=Ciriani,%2520Henri&amp;sort=Project_Name">Ciriani, Henri</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Coderch,%20Jos%E9%20Antonio&amp;sort=Project_Name">Coderch, José ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Coderch,%20Jose%20Antonio%20&amp;%20Manuel%20Valls%20Verg%E8s&amp;sort=Project_Name">Coderch, Jose ...</a>
+<a href="instance?field=Architect&amp;val=Colonnese,%2520Vittorino,%2520Giovanni%2520Muzio,%2520Pier%2520Fausto%2520Barelli&amp;sort=Project_Name">Colonnese, ...</a>
+<a href="instance?field=Architect&amp;val=Davis%2520&amp;%2520Brody%2520Associates&amp;sort=Project_Name">Davis & Brody ...</a>
+<a href="instance?field=Architect&amp;val=Davis,%2520Brody%2520&amp;%2520Associates%2520(Lew%2520Davis,%2520Sam%2520Brody)&amp;sort=Project_Name">Davis, Brody & ...</a>
+<a href="instance?field=Architect&amp;val=de%2520Architekten%2520Cie,%2520Geurts%2520+%2520Schulze,%2520Claus%2520+%2520Kaan,%2520DKV,%2520Lafour%2520+%2520Wijk,%2520Van%2520Sambeek%2520+%2520van%2520Veen,%2520Dick%2520van%2520Gameren,%2520KuperCompagnons&amp;sort=Project_Name">de Architekten ...</a>
+<a href="instance?field=Architect&amp;val=de%2520Klerk,%2520Michel&amp;sort=Project_Name">de Klerk, Michel</a>
+<a href="instance?field=Architect&amp;val=de%2520las%2520Casas,%2520Manuel&amp;sort=Project_Name">de las Casas, ...</a>
+<a href="instance?field=Architect&amp;val=De%2520Riso,%2520Domenico&amp;sort=Project_Name">De Riso, Domenico</a>
+<a href="instance?field=Architect&amp;val=Devillers,%2520Marina%2520&amp;%2520Lena%2520Perot&amp;sort=Project_Name">Devillers, Marina ...</a>
+<a href="instance?field=Architect&amp;val=Diener%2520&amp;%2520Diener%2520(Roger%2520Diener)&amp;sort=Project_Name">Diener & Diener ...</a>
+<a href="instance?field=Architect&amp;val=Dietrich%2520Bangert,%2520Bernd%2520Jansen,%2520Stephan%2520Scholz,%2520Axel%2520Schultes&amp;sort=Project_Name">Dietrich Bangert, ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Doll%E9,%20Beatrice%20&amp;%20Christian%20Labb%E9&amp;sort=Project_Name">Dollé, Beatrice & ...</a>
+<a href="instance?field=Architect&amp;val=Dusapin,%2520Fabrice%2520&amp;%2520Francois%2520Leclercq&amp;sort=Project_Name">Dusapin, Fabrice ...</a>
+<a href="instance?field=Architect&amp;val=Erskine,%2520Ralph&amp;sort=Project_Name">Erskine, Ralph</a>
+<a href="instance?field=Architect&amp;val=Erskine,%2520Ralph,%2520Johannes%2520Tovatt,%2520Hunt%2520Tomposon%2520Associates&amp;sort=Project_Name">Erskine, Ralph, ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Faller,%20Peter%20&amp;%20Hermann%20Schr%F6der&amp;sort=Project_Name">Faller, Peter & ...</a>
+<a href="instance?field=Architect&amp;val=Figini,%2520Luigi%2520&amp;%2520Gino%2520Pollini&amp;sort=Project_Name">Figini, Luigi & ...</a>
+<a href="instance?field=Architect&amp;val=Fiorentino,%2520Mario%2520%3B%2520F.%2520Gorio,%2520P.M.%2520Lugli,%2520G.%2520Sterbini,%2520M.%2520Valori%2520&amp;%2520others,%2520R.%2520Morandi%2520(struct)&amp;sort=Project_Name">Fiorentino, Mario ...</a>
+<a href="instance?field=Architect&amp;val=Furet,%2520Catherine&amp;sort=Project_Name">Furet, Catherine</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=F%E6llestegnestuen%20(J%F8rgen%20Ole%20S%F8rensen,%20Viggo%20M%F8ller-Jensen,%20Tyge%20Arnfred)&amp;sort=Project_Name">Fællestegnestuen ...</a>
+<a href="instance?field=Architect&amp;val=Galfetti,%2520Aurelio&amp;sort=Project_Name">Galfetti, Aurelio</a>
+<a href="instance?field=Architect&amp;val=Gatti,%2520Ilaria&amp;sort=Project_Name">Gatti, Ilaria</a>
+<a href="instance?field=Architect&amp;val=Gaudin,%2520Henri&amp;sort=Project_Name">Gaudin, Henri</a>
+<a href="instance?field=Architect&amp;val=GBD%2520Architects%2520&amp;sort=Project_Name">GBD Architects </a>
+<a href="instance?field=Architect&amp;val=GBD%2520Architects%2520&amp;%2520Holst%2520Architecture&amp;sort=Project_Name">GBD Architects & ...</a>
+<a href="instance?field=Architect&amp;val=Gibberd,%2520Frederick&amp;sort=Project_Name">Gibberd, Frederick</a>
+<a href="instance?field=Architect&amp;val=Gillar,%2520Jan&amp;sort=Project_Name">Gillar, Jan</a>
+<a href="instance?field=Architect&amp;val=Ginsberg,%2520Jean%2520%2520&amp;%2520Bertold%2520Lubetkin&amp;sort=Project_Name">Ginsberg, Jean  & ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Goldfinger,%20%20Ern%F6&amp;sort=Project_Name">Goldfinger,  Ernö</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Goldfinger,%20Ern%F6&amp;sort=Project_Name">Goldfinger, Ernö</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Goube,%20Herv%E9&amp;sort=Project_Name">Goube, Hervé</a>
+<a href="instance?field=Architect&amp;val=Grimshaw,%2520Nicholas%2520&amp;%2520Partners&amp;sort=Project_Name">Grimshaw, Nicholas...</a>
+<a href="instance?field=Architect&amp;val=Havlicek,%2520Josef%2520%2520&amp;%2520Jaroslav%2520Polivka&amp;sort=Project_Name">Havlicek, Josef  ...</a>
+<a href="instance?field=Architect&amp;val=Haworth%2520Tompkins%2520Architects&amp;sort=Project_Name">Haworth Tompkins ...</a>
+<a href="instance?field=Architect&amp;val=Helamaa%2520&amp;%2520Pulkkinen%2520(Jarmo%2520Pulkkinen)&amp;sort=Project_Name">Helamaa & Pulkkine...</a>
+<a href="instance?field=Architect&amp;val=Helin,%2520Pekka,%2520%2520&amp;%2520Tuomo%2520Siitonen&amp;sort=Project_Name">Helin, Pekka,  & ...</a>
+<a href="instance?field=Architect&amp;val=Herzog,%2520Jacques%2520&amp;%2520Pierre%2520de%2520Meuron&amp;sort=Project_Name">Herzog, Jacques & ...</a>
+<a href="instance?field=Architect&amp;val=Hinrich%2520&amp;%2520%2520Inken%2520Baller%2520&amp;sort=Project_Name">Hinrich &  Inken ...</a>
+<a href="instance?field=Architect&amp;val=Holst%2520Architecture%252FAnkrom%2520Moisan&amp;sort=Project_Name">Holst Architecture...</a>
+<a href="instance?field=Architect&amp;val=Hong%2520Kong%2520Housing%2520Authority&amp;sort=Project_Name">Hong Kong Housing ...</a>
+<a href="instance?field=Architect&amp;val=Ignazio%2520Gardella&amp;sort=Project_Name">Ignazio Gardella</a>
+<a href="instance?field=Architect&amp;val=Jean%2520Nouvel%252FBeyer%2520Blinder%2520Belle&amp;sort=Project_Name">Jean Nouvel/Beyer ...</a>
+<a href="instance?field=Architect&amp;val=Jestico%2520&amp;%2520Whiles&amp;sort=Project_Name">Jestico & Whiles</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Jos%E9%20Antonio%20Coderch%20&amp;sort=Project_Name">José Antonio ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Jos%E9%20Antonio%20Coderch%20+%20Manual%20Valls%20Verg%E9s&amp;sort=Project_Name">José Antonio ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Jos%E9%E9%20Antonio%20%20Coderch&amp;sort=Project_Name">Joséé Antonio  ...</a>
+<a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name">Junquera, Jeronimo...</a>
+<a href="instance?field=Architect&amp;val=Kagan,%2520Michel&amp;sort=Project_Name">Kagan, Michel</a>
+<a href="instance?field=Architect&amp;val=Kairamo,%2520Krkki%2520&amp;%2520Maritta%2520Nylen&amp;sort=Project_Name">Kairamo, Krkki & ...</a>
+<a href="instance?field=Architect&amp;val=Kikutake,%2520Kiyonori&amp;sort=Project_Name">Kikutake, Kiyonori</a>
+<a href="instance?field=Architect&amp;val=Kollhoff,%2520Hans%2520&amp;%2520Arthur%2520Ovaska&amp;sort=Project_Name">Kollhoff, Hans & ...</a>
+<a href="instance?field=Architect&amp;val=Kollhoff,%2520Hans%2520&amp;%2520Christian%2520Rapp&amp;sort=Project_Name">Kollhoff, Hans & ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=K%F6ther%20+%20Salman&amp;sort=Project_Name">Köther + Salman</a>
+<a href="instance?field=Architect&amp;val=Lacey,%2520Nicholas%2520&amp;%2520Partners&amp;sort=Project_Name">Lacey, Nicholas & ...</a>
+<a href="instance?field=Architect&amp;val=Lagreco,%2520Charles%2520(Architectural%2520Collective)&amp;sort=Project_Name">Lagreco, Charles ...</a>
+<a href="instance?field=Architect&amp;val=Leboucq,%2520Patricia&amp;sort=Project_Name">Leboucq, Patricia</a>
+<a href="instance?field=Architect&amp;val=Lion,%2520Yves&amp;sort=Project_Name">Lion, Yves</a>
+<a href="instance?field=Architect&amp;val=Lion,%2520Yves%2520&amp;%2520Alan%2520Levitt&amp;sort=Project_Name">Lion, Yves & Alan ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Llin%E1s,%20Josep%20Antoni&amp;sort=Project_Name">Llinás, Josep ...</a>
+<a href="instance?field=Architect&amp;val=LLTR%2520%2520Architectes%2520(O.%2520Le%2520Boursicot,%2520P.%2520Loth,%2520G.%2520Testas,%2520Y.%2520Robert)&amp;sort=Project_Name">LLTR  Architectes ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Lods,%20Marcel%20%20&amp;%20Eug%E9ne%20Beaudouin&amp;sort=Project_Name">Lods, Marcel  & ...</a>
+<a href="instance?field=Architect&amp;val=Lubetkin,%2520Bertold%2520%2520&amp;%2520Tecton&amp;sort=Project_Name">Lubetkin, Bertold ...</a>
+<a href="instance?field=Architect&amp;val=Luccichenti,%2520Ugo&amp;sort=Project_Name">Luccichenti, Ugo</a>
+<a href="instance?field=Architect&amp;val=Luigi%2520Moretti&amp;sort=Project_Name">Luigi Moretti</a>
+<a href="instance?field=Architect&amp;val=Lutyens,%2520Sir%2520Edwin&amp;sort=Project_Name">Lutyens, Sir Edwin</a>
+<a href="instance?field=Architect&amp;val=Madec,%2520Philippe&amp;sort=Project_Name">Madec, Philippe</a>
+<a href="instance?field=Architect&amp;val=Markelius,%2520Sven&amp;sort=Project_Name">Markelius, Sven</a>
+<a href="instance?field=Architect&amp;val=Metron,%2520(Hans%2520Scherer,%2520Strickler%2520&amp;%2520Weber)&amp;sort=Project_Name">Metron, (Hans ...</a>
+<a href="instance?field=Architect&amp;val=Meyer%2520+%2520Van%2520Schooten,%2520Architekten%2520Cie,%2520Heren%25205&amp;sort=Project_Name">Meyer + Van ...</a>
+<a href="instance?field=Architect&amp;val=Mimram,%2520Marc&amp;sort=Project_Name">Mimram, Marc</a>
+<a href="instance?field=Architect&amp;val=Moller%2520Architects%2520(Gordon%2520&amp;%2520Craig)&amp;sort=Project_Name">Moller Architects ...</a>
+<a href="instance?field=Architect&amp;val=Moretti,%2520Luigi&amp;sort=Project_Name">Moretti, Luigi</a>
+<a href="instance?field=Architect&amp;val=Moretti,%2520Luigi,%2520%2520Vittorio%2520Cafiero,%2520Ignazio%2520Guidi,%2520Adalberto%2520Libera&amp;sort=Project_Name">Moretti, Luigi,  ...</a>
+<a href="instance?field=Architect&amp;val=MVRDV%2520(Winy%2520Maas,%2520Jacob%2520van%2520Rijs,%2520Nathalie%2520de%2520Vries&amp;sort=Project_Name">MVRDV (Winy Maas, ...</a>
+<a href="instance?field=Architect&amp;val=MVRDV%2520(Winy%2520Maas,%2520Jacob%2520van%2520Rijs,%2520Nathalie%2520de%2520Vries)&amp;sort=Project_Name">MVRDV (Winy Maas, ...</a>
+<a href="instance?field=Architect&amp;val=MVrRDV%2520(Winy%2520Maas,%2520Jacob%2520van%2520Rijs,%2520Nathalie%2520de%2520Vries&amp;sort=Project_Name">MVrRDV (Winy ...</a>
+<a href="instance?field=Architect&amp;val=NA&amp;sort=Project_Name">NA</a>
+<a href="instance?field=Architect&amp;val=Nouvell,%2520Jean%2520%2520&amp;%2520Assoc.&amp;sort=Project_Name">Nouvell, Jean  & ...</a>
+<a href="instance?field=Architect&amp;val=Olson,%2520James%2520&amp;%2520Gordon%2520Walker&amp;sort=Project_Name">Olson, James & ...</a>
+<a href="instance?field=Architect&amp;val=Otaka,%2520Masato&amp;sort=Project_Name">Otaka, Masato</a>
+<a href="instance?field=Architect&amp;val=Patout,%2520%2520Pierre&amp;sort=Project_Name">Patout,  Pierre</a>
+<a href="instance?field=Architect&amp;val=Piano,%2520Renzo,%2520%2520Building%2520Workshop&amp;sort=Project_Name">Piano, Renzo,  ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Pietil%E4,%20Raili%20&amp;%20Reima&amp;sort=Project_Name">Pietilä, Raili & ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Ponti,%20Gio,%20Gigi%20Gh%F3%20&amp;%20Antonio%20Fornaroli&amp;sort=Project_Name">Ponti, Gio, Gigi ...</a>
+<a href="instance?field=Architect&amp;val=Prentice,%2520Chan%2520Ohlhausen&amp;sort=Project_Name">Prentice, Chan ...</a>
+<a href="instance?field=Architect&amp;val=Proctor%2520and%2520Matthews%2520%2520(Stephen%2520Proctor%2520and%2520Andrew%2520Matthews)&amp;sort=Project_Name">Proctor and ...</a>
+<a href="instance?field=Architect&amp;val=Proctor%2520and%2520Matthews%2520(Stephen%2520Proctor%2520and%2520Andrew%2520Mathews&amp;sort=Project_Name">Proctor and ...</a>
+<a href="instance?field=Architect&amp;val=Public,%2520architect%2520(James%2520Brown%2520&amp;%2520James%2520Gates)&amp;sort=Project_Name">Public, architect ...</a>
+<a href="instance?field=Architect&amp;val=Quarone,%2520Ludovico,%3B%2520%2520Gabriella%2520Esposito,%2520Roberto%2520Maestro,%2520Luciano%2520Rubino&amp;sort=Project_Name">Quarone, Ludovico,...</a>
+<a href="instance?field=Architect&amp;val=Reggio,%2520Gianluigi%2520&amp;%2520Mario%2520Tevarotto&amp;sort=Project_Name">Reggio, Gianluigi ...</a>
+<a href="instance?field=Architect&amp;val=Richard%2520Meier&amp;sort=Project_Name">Richard Meier</a>
+<a href="instance?field=Architect&amp;val=Ridolfi,%2520Marie%2520&amp;%2520Wolfgang%2520Frankl&amp;sort=Project_Name">Ridolfi, Marie & ...</a>
+<a href="instance?field=Architect&amp;val=Ridolfi,%2520Mario%2520&amp;%2520Wolfgang%2520Frankl&amp;sort=Project_Name">Ridolfi, Mario & ...</a>
+<a href="instance?field=Architect&amp;val=Rosenberg,%2520Evzen&amp;sort=Project_Name">Rosenberg, Evzen</a>
+<a href="instance?field=Architect&amp;val=Rudy%2520Utytenhaak&amp;sort=Project_Name">Rudy Utytenhaak</a>
+<a href="instance?field=Architect&amp;val=Rudy%2520Uytenhaak&amp;sort=Project_Name">Rudy Uytenhaak</a>
+<a href="instance?field=Architect&amp;val=Saadi,%2520Emmanuel&amp;sort=Project_Name">Saadi, Emmanuel</a>
+<a href="instance?field=Architect&amp;val=Sabbatini,%2520Innocenzo&amp;sort=Project_Name">Sabbatini, ...</a>
+<a href="instance?field=Architect&amp;val=Schindler,%2520Rudolph%2520M.&amp;sort=Project_Name">Schindler, ...</a>
+<a href="instance?field=Architect&amp;val=Secundino%2520Zuazo&amp;sort=Project_Name">Secundino Zuazo</a>
+<a href="instance?field=Architect&amp;val=Siza,%2520Alvaro&amp;sort=Project_Name">Siza, Alvaro</a>
+<a href="instance?field=Architect&amp;val=Skidmore,%2520Owings%2520&amp;%2520Merrill&amp;sort=Project_Name">Skidmore, Owings ...</a>
+<a href="instance?field=Architect&amp;val=Smith%2520&amp;%2520Others%2520(Ted%2520Smith%2520&amp;%2520Lloyd%2520Russell)&amp;sort=Project_Name">Smith & Others ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Stille,%20Arvid%20%20(site%20plan),;%20C.%20Johnasson,%20B.%20Hedvall,%20R.%20%D6sterberbg,%20S.%20Fr%F6len,%20L.%20Bryde.%20H.%20Ahlberg&amp;sort=Project_Name">Stille, Arvid  ...</a>
+<a href="instance?field=Architect&amp;val=Stockar-Bernkoph,%2520Jaroslav%2520%2520&amp;%2520Josef%2520Solc&amp;sort=Project_Name">Stockar-Bernkoph, ...</a>
+<a href="http://www.housingprototypes.org/instance?field=Architect&amp;val=Storgaard,%20J.%20P.%20,%20J.%20%D8rum-Nielsen,%20Hanne%20Markussen,%20Hanne%20%D8run-Nielsen&amp;sort=Project_Name">Storgaard, J. P. ...</a>
+<a href="instance?field=Architect&amp;val=Tangram%2520Architecture&amp;sort=Project_Name">Tangram Architectu...</a>
+<a href="instance?field=Architect&amp;val=Taut,%2520Bruno%2520&amp;%2520%2520Martin%2520Wagner&amp;sort=Project_Name">Taut, Bruno &  ...</a>
+<a href="instance?field=Architect&amp;val=Telje-Torp-Aasen%2520Architects&amp;sort=Project_Name">Telje-Torp-Aasen ...</a>
+<a href="instance?field=Architect&amp;val=Uchii,%2520Shozo&amp;sort=Project_Name">Uchii, Shozo</a>
+<a href="instance?field=Architect&amp;val=Uytenhaak,%2520Rudy&amp;sort=Project_Name">Uytenhaak, Rudy</a>
+<a href="instance?field=Architect&amp;val=Wagner,%2520Otto&amp;sort=Project_Name">Wagner, Otto</a>
+<a href="instance?field=Architect&amp;val=Wallander,%2520Sven%2520(for%2520the%2520HSB)&amp;sort=Project_Name">Wallander, Sven ...</a>
+</div></div>	
+<div class="scrollup"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscrob.scrollNorth(); ypSlideOutMenu.showMenu('menu2');" 
+			onmousedown="menuscrob.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscrob.endScroll(); ypSlideOutMenu.hideMenu('menu2');"
+			onmouseup="menuscrob.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/up.gif"></a>
+		</div>
+		<div class="scrolldown"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscrob.scrollSouth(); ypSlideOutMenu.showMenu('menu2');" 
+			onmousedown="menuscrob.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscrob.endScroll(); ypSlideOutMenu.hideMenu('menu2');"
+			onmouseup="menuscrob.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/down.gif"></a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div id="menu3Container">
+	<div id="menu3Content" class="menu">
+		<div class="options">
+<a href="instance?field=Building_Type&amp;val=Clustered%2520low-rise&amp;sort=Project_Name">Clustered low-rise</a>
+<a href="instance?field=Building_Type&amp;val=Courtyard&amp;sort=Project_Name">Courtyard</a>
+<a href="instance?field=Building_Type&amp;val=Perimeter%2520block&amp;sort=Project_Name">Perimeter block</a>
+<a href="instance?field=Building_Type&amp;val=Perimeter%2520block,%2520corner&amp;sort=Project_Name">Perimeter block, corner</a>
+<a href="instance?field=Building_Type&amp;val=Perimeter%2520block,%2520courtyard&amp;sort=Project_Name">Perimeter block, courtyard</a>
+<a href="instance?field=Building_Type&amp;val=Perimeter%2520block,%2520infill&amp;sort=Project_Name">Perimeter block, infill</a>
+<a href="instance?field=Building_Type&amp;val=Row%2520house&amp;sort=Project_Name">Row house</a>
+<a href="instance?field=Building_Type&amp;val=Slab&amp;sort=Project_Name">Slab, corridor</a>
+<ul>
+<li><a href="instance?field=Building_Type&amp;val=Slab,%2520double-loaded&amp;sort=Project_Name">double-loaded</a></li>
+<li><a class="subitem" href="instance?field=Building_Type&amp;val=Slab,%2520double-loaded,%2520skip%2520stop&amp;sort=Project_Name">double-loaded, skip stop</a></li>
+<li><a class="subitem" href="instance?field=Building_Type&amp;val=Slab,%2520gallery%2520access&amp;sort=Project_Name">gallery-access</a></li>
+<li><a class="subitem" href="instance?field=Building_Type&amp;val=Slab,%2520gallery-access,%2520skip%2520stop&amp;sort=Project_Name">gallery-access, skip stop</a></li>
+</ul>
+<a href="instance?field=Building_Type&amp;val=Slab,%2520point-access&amp;sort=Project_Name">Slab, point-access</a>
+<a href="instance?field=Building_Type&amp;val=Terrace&amp;sort=Project_Name">Terrace</a>
+<a href="instance?field=Building_Type&amp;val=Terraced%2520slab&amp;sort=Project_Name">Terraced slab</a>
+<a href="instance?field=Building_Type&amp;val=Tower&amp;sort=Project_Name">Tower</a>
+<a href="instance?field=Building_Type&amp;val=Urban%2520villa&amp;sort=Project_Name">Urban villa</a>
+		</div>
+	</div>
+</div>
+
+<div id="menu4Container">
+<div id="menuscro4Container">
+	<div id="menu4Content" class="menu">
+	<div id="menuscro4Content" class="menu">
+		<div class="options"><a href="instance?field=City&amp;val=Amsterdam&amp;sort=Project_Name">Amsterdam</a>
+<a href="instance?field=City&amp;val=Auckland&amp;sort=Project_Name">Auckland</a>
+<a href="instance?field=City&amp;val=Barcelona&amp;sort=Project_Name">Barcelona</a>
+<a href="instance?field=City&amp;val=Berlin&amp;sort=Project_Name">Berlin</a>
+<a href="instance?field=City&amp;val=Bern&amp;sort=Project_Name">Bern</a>
+<a href="instance?field=City&amp;val=Brugg&amp;sort=Project_Name">Brugg</a>
+<a href="instance?field=City&amp;val=Burgdorf&amp;sort=Project_Name">Burgdorf</a>
+<a href="http://www.housingprototypes.org/instance?field=City&amp;val=Ch%E2tenay-Malabry%20(Paris)&amp;sort=Project_Name">Châtenay-Malabry ...</a>
+<a href="instance?field=City&amp;val=Chicago&amp;sort=Project_Name">Chicago</a>
+<a href="instance?field=City&amp;val=Copenhagen&amp;sort=Project_Name">Copenhagen</a>
+<a href="instance?field=City&amp;val=Den%2520Haag&amp;sort=Project_Name">Den Haag</a>
+<a href="instance?field=City&amp;val=Drancy%2520(Paris)&amp;sort=Project_Name">Drancy (Paris)</a>
+<a href="instance?field=City&amp;val=Espoo,%2520Westend,%2520(Helsinki)&amp;sort=Project_Name">Espoo, Westend, ...</a>
+<a href="http://www.housingprototypes.org/instance?field=City&amp;val=%C9vora&amp;sort=Project_Name">Évora</a>
+<a href="instance?field=City&amp;val=Flamatt&amp;sort=Project_Name">Flamatt</a>
+<a href="instance?field=City&amp;val=Frederiksberg%2520(Copenhagen)&amp;sort=Project_Name">Frederiksberg ...</a>
+<a href="instance?field=City&amp;val=Helsinki&amp;sort=Project_Name">Helsinki</a>
+<a href="instance?field=City&amp;val=Henglo&amp;sort=Project_Name">Henglo</a>
+<a href="instance?field=City&amp;val=Hiroshima&amp;sort=Project_Name">Hiroshima</a>
+<a href="instance?field=City&amp;val=Hong%2520Kong&amp;sort=Project_Name">Hong Kong</a>
+<a href="instance?field=City&amp;val=London&amp;sort=Project_Name">London</a>
+<a href="instance?field=City&amp;val=Los%2520Angeles&amp;sort=Project_Name">Los Angeles</a>
+<a href="instance?field=City&amp;val=Madrid&amp;sort=Project_Name">Madrid</a>
+<a href="instance?field=City&amp;val=Madrid%2520(%2520Vallecas)&amp;sort=Project_Name">Madrid ( Vallecas)</a>
+<a href="instance?field=City&amp;val=Madrid%2520(Vallecas)&amp;sort=Project_Name">Madrid (Vallecas)</a>
+<a href="instance?field=City&amp;val=Miami&amp;sort=Project_Name">Miami</a>
+<a href="instance?field=City&amp;val=Milan&amp;sort=Project_Name">Milan</a>
+<a href="instance?field=City&amp;val=Milano&amp;sort=Project_Name">Milano</a>
+<a href="instance?field=City&amp;val=Montpellier&amp;sort=Project_Name">Montpellier</a>
+<a href="instance?field=City&amp;val=New%2520York&amp;sort=Project_Name">New York</a>
+<a href="instance?field=City&amp;val=Nimes&amp;sort=Project_Name">Nimes</a>
+<a href="instance?field=City&amp;val=Oslo&amp;sort=Project_Name">Oslo</a>
+<a href="instance?field=City&amp;val=Paris&amp;sort=Project_Name">Paris</a>
+<a href="instance?field=City&amp;val=Paris,%25204th&amp;sort=Project_Name">Paris, 4th</a>
+<a href="instance?field=City&amp;val=Pasadena%2520Heights%2520(Mishima)&amp;sort=Project_Name">Pasadena Heights ...</a>
+<a href="instance?field=City&amp;val=Portland&amp;sort=Project_Name">Portland</a>
+<a href="instance?field=City&amp;val=Portland,%2520OR&amp;sort=Project_Name">Portland, OR</a>
+<a href="instance?field=City&amp;val=Porto&amp;sort=Project_Name">Porto</a>
+<a href="instance?field=City&amp;val=Prague&amp;sort=Project_Name">Prague</a>
+<a href="instance?field=City&amp;val=Rome&amp;sort=Project_Name">Rome</a>
+<a href="instance?field=City&amp;val=San%2520Diego&amp;sort=Project_Name">San Diego</a>
+<a href="instance?field=City&amp;val=Sandviken&amp;sort=Project_Name">Sandviken</a>
+<a href="instance?field=City&amp;val=Santa%2520Monica&amp;sort=Project_Name">Santa Monica</a>
+<a href="instance?field=City&amp;val=Seattle&amp;sort=Project_Name">Seattle</a>
+<a href="instance?field=City&amp;val=Stockholm&amp;sort=Project_Name">Stockholm</a>
+<a href="instance?field=City&amp;val=Stuttgart&amp;sort=Project_Name">Stuttgart</a>
+<a href="instance?field=City&amp;val=Tapiola%2520(Helsinki)&amp;sort=Project_Name">Tapiola (Helsinki)</a>
+<a href="instance?field=City&amp;val=Umiken&amp;sort=Project_Name">Umiken</a>
+<a href="instance?field=City&amp;val=Venice&amp;sort=Project_Name">Venice</a>
+<a href="instance?field=City&amp;val=Vienna&amp;sort=Project_Name">Vienna</a>
+<a href="instance?field=City&amp;val=West%2520Hollywood%2520(Los%2520Angeles)&amp;sort=Project_Name">West Hollywood ...</a>
+<a href="instance?field=City&amp;val=Yokohama&amp;sort=Project_Name">Yokohama</a>
+			</div>
+		</div>
+		<div class="scrollup"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscrod.scrollNorth(); ypSlideOutMenu.showMenu('menu4');" 
+			onmousedown="menuscrod.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscrod.endScroll(); ypSlideOutMenu.hideMenu('menu4');"
+			onmouseup="menuscrod.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/up.gif"></a>
+		</div>
+		<div class="scrolldown"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscrod.scrollSouth(); ypSlideOutMenu.showMenu('menu4');" 
+			onmousedown="menuscrod.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscrod.endScroll(); ypSlideOutMenu.hideMenu('menu4');"
+			onmouseup="menuscrod.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/down.gif"></a>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="menu5Container">
+<div id="menuscro5Container">
+	<div id="menu5Content" class="menu">
+	<div id="menuscro5Content" class="menu">
+		<div class="options"><a href="instance?field=Country&amp;val=Austria&amp;sort=Project_Name">Austria</a><a href="instance?field=Country&amp;val=Czechoslavakia&amp;sort=Project_Name">Czechoslavakia</a><a href="instance?field=Country&amp;val=Czechoslovakia&amp;sort=Project_Name">Czechoslovakia</a><a href="instance?field=Country&amp;val=Denmark&amp;sort=Project_Name">Denmark</a><a href="instance?field=Country&amp;val=England&amp;sort=Project_Name">England</a><a href="instance?field=Country&amp;val=Finland&amp;sort=Project_Name">Finland</a><a href="instance?field=Country&amp;val=France&amp;sort=Project_Name">France</a><a href="instance?field=Country&amp;val=Germany&amp;sort=Project_Name">Germany</a><a href="instance?field=Country&amp;val=Great%2520Britain&amp;sort=Project_Name">Great Britain</a><a href="instance?field=Country&amp;val=Hong%2520Kong&amp;sort=Project_Name">Hong Kong</a><a href="instance?field=Country&amp;val=Italy&amp;sort=Project_Name">Italy</a><a href="instance?field=Country&amp;val=Japan&amp;sort=Project_Name">Japan</a><a href="instance?field=Country&amp;val=Netherlands&amp;sort=Project_Name">Netherlands</a><a href="instance?field=Country&amp;val=New%2520Zealand&amp;sort=Project_Name">New Zealand</a><a href="instance?field=Country&amp;val=Norway&amp;sort=Project_Name">Norway</a><a href="instance?field=Country&amp;val=Portugal&amp;sort=Project_Name">Portugal</a><a href="instance?field=Country&amp;val=Spain&amp;sort=Project_Name">Spain</a><a href="instance?field=Country&amp;val=Sweden&amp;sort=Project_Name">Sweden</a><a href="instance?field=Country&amp;val=Switzerland&amp;sort=Project_Name">Switzerland</a><span class="more"><a href="category?field=Country">More countries</a></span>
+			</div>
+		</div>
+		<div class="scrollup"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscroe.scrollNorth(); ypSlideOutMenu.showMenu('menu5');" 
+			onmousedown="menuscroe.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscroe.endScroll(); ypSlideOutMenu.hideMenu('menu5');"
+			onmouseup="menuscroe.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/up.gif"></a>
+		</div>
+		<div class="scrolldown"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;%2520Estanislao%2520Perez-Pita&amp;sort=Project_Name#"
+			onmouseover="menuscroe.scrollSouth(); ypSlideOutMenu.showMenu('menu5');" 
+			onmousedown="menuscroe.overrideScrollSpeed(350); return false;" 
+			onmousemove="return false;"
+			onmouseout="menuscroe.endScroll(); ypSlideOutMenu.hideMenu('menu5');"
+			onmouseup="menuscroe.overrideScrollSpeed(100); return false;"
+			onclick="return false;"><img border="0" width="15" height="15" src="temp/down.gif"></a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div class="mainnav">
+<form name="search" method="get" action="http://www.housingprototypes.org/search"><img src="temp/search.gif">
+<input class="searchbox" type="text" size="10" name="searchbox" val="search words" onfocus="val=(val=='search words')?'':val;" onblur="val=(val=='')?'search words':val;">
+<input type="image" name="submit" val="submit" src="temp/go.gif" class="submit">
+<a href="bibliography"><img border="0" src="temp/bibliography.gif"></a> 
+<a href="glossary"><img border="0" src="temp/glossary.gif"></a> 
+<a href="about"><img border="0" src="temp/aboutthissite.gif"></a> 
+</form>
+</div>
+<div class="projectname">
+Junquera, Jeronimo 
+</div>
+<div class="projectbyline">
+1 results found | 1 to 1 shown  </div>
+<div class="projectsummary">
+<table width="100%" cellpadding="4" cellspacing="0" border="0">
+<tr>
+<th ><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;sort=Project_Name">Project Name</a></th>
+<th class="highlight"><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;sort=Architect">Architect</a></th>
+<th ><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;sort=Building_Type">Building Type</a></th>
+<th ><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;sort=City">City</a></th>
+<th ><a href="instance?field=Architect&amp;val=Junquera,%2520Jeronimo%2520&amp;sort=Country">Country</a></th>
+</tr>
+
+<tr bgcolor="#EFEFEF" style="border-bottom: 1px dotted #272338;">
+<td><a href="project?File_No=E009">Palomeras-Andaluces</a></td>
+<td>Junquera, Jeronimo & ...</td>
+<td>Row house/Slab, point-access</td>
+<td>Madrid (Vallecas)</td>
+<td>Spain</td>
+</tr>
+</table>
+
+
+</div>
+
+<div class="basenavigation">
+List all by: <a href="category?field=Project_Name">Project Name</a> | <a href="category?field=Architect">Architect</a> | <a href="category?field=Building_Type">Building Type</a> | <a href="category?field=City">City</a> | <a href="category?field=Country">Country</a>
+<p align="right">
+
+&copy;2002 Roger Sherwood. All Rights Reserved<br>
+http://www.housingprototypes.org
+</div>
+
+</body>
+</html>
